@@ -41,7 +41,9 @@ header {
 }
 
 .hidden {
-    display: none; 
+    /* transition: all 0.5s ease-out;
+    display: none; */
+    opacity: 0;
 }
 
 li > a {
@@ -69,6 +71,8 @@ ul {
     border-style: none;
     border-radius: 25px;
     padding: 10px 20px;
+    transition: all 0.5s ease-out;
+
 }
 
 .head-section img {
@@ -210,14 +214,16 @@ footer ul {
         top: 90px;
         width: 85%;
         font-size: 14px;
-        animation-name: navAnimation;
-        animation-duration: 1s;
+
+        transition: all 1s;
+        /* animation-name: navAnimation;
+        animation-duration: 1s; */
     }
       
-      @keyframes navAnimation {
+      /* @keyframes navAnimation {
         from {right: -350px}
         to {right: 35px;}
-      }
+      } */
 
     .nav-div .nav-items {
         border-bottom: 2px solid hsl(257, 7%, 63%);
